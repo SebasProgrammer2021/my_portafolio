@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My Portafolio - Sebastián Londoño Valencia, Software Frontend Developer, Systems and Computer Engineer. Mi Portafolio - Sebastián Londoño Valencia, Desarrollador Frontend, Ingeniero de Sistemas y Computación."
+    />
+    <title>My Portafolio</title>
+    <link rel="stylesheet" href="index.css" preload />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbarList">
+          <li id="itemEnlace" class="navbarListItem">
+            <a href="/" class="navbarListItemLink" name="enlace">Inicio</a>
+          </li>
+          <li id="itemEnlace" class="navbarListItem">
+            <a href="#welcome" class="navbarListItemLink" name="enlace"
+              >Welcome</a
+            >
+          </li>
+          <li id="itemEnlace" class="navbarListItem">
+            <a href="#aboutMe" class="navbarListItemLink" name="enlace"
+              >About me</a
+            >
+          </li>
+          <li id="itemEnlace" class="navbarListItem">
+            <a href="#skills" class="navbarListItemLink" name="enlace"
+              >Skills</a
+            >
+          </li>
+          <li id="itemEnlace" class="navbarListItem">
+            <a href="#projects" class="navbarListItemLink" name="enlace"
+              >Projects</a
+            >
+          </li>
+          <li id="itemEnlace" class="navbarListItem">
+            <a href="#contactMe" class="navbarListItemLink" name="enlace"
+              >Contact Form</a
+            >
+          </li>
+          <li id="itemEnlace" class="navbarListItem">
+            <a href="#socialNetworks" class="navbarListItemLink" name="enlace"
+              >Social Networks</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="welcome" id="welcome">
+      <h1>My Portafolio</h1>
+    </section>
+    <section class="aboutMe" id="aboutMe">
+      <h2 class="aboutMeTitle">About me</h2>
+      <div class="aboutMeContenteContainer">
+        <div class="aboutMeProfileImageContainer">
+          <img
+            class="aboutMeProfileImage"
+            src="./me.webp"
+            alt="profile image"
+            loading="lazy" 
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <p class="aboutMeProfileDescription">
+          <span class="aboutMeProfileDescription__quote">
+            "You don't have to be great to start, but you have to start to be
+            great" - Zig Ziglar
+          </span>
+          Inspired by this quote, I completed my degree in Systems Engineering
+          at the University of Quindio. To strengthen my academic training, I
+          also obtained a Technician in Software Development from SENA. I am
+          proficient in React⚛️ and other front-end technologies such as HTML 5,
+          CSS 3, JavaScript, TypeScript, and Tailwind CSS. I also have
+          experience with MySql, Docker, Next JS, Postman, Linux, Git, Github,
+          Gitlab, Scrum, Kanban, task management tools, teamwork, excellent
+          communication skills, and a strong focus on results.
+        </p>
+      </div>
+    </section>
+    <section name="skills" class="skills" id="skills">
+      <h2>Skills</h2>
+      <div id="skillsContainer"></div>
+    </section>
+    <section name="projects" class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="projectsContainer"></div>
+    </section>
+    <section name="contactMe" class="contactMe" id="contactMe">
+      <h2>Contact me</h2>
+      <form
+        action="mailto:sebastian.snlo@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <p class="formField">
+          <label class="formFieldLabel" for="name">Name:</label>
+          <input
+            autocomplete="on"
+            class="formFieldInput"
+            id="name"
+            required
+            name="name"
+            type="text"
+            placeholder="Name"
+          />
+        </p>
+        <p class="formField">
+          <label class="formFieldLabel" for="email">Email:</label>
+          <input
+            autocomplete="on"
+            class="formFieldInput"
+            id="email"
+            name="email"
+            type="text"
+            required
+            placeholder="email@gmail.com"
+          />
+        </p>
+        <p class="formField">
+          <label class="formFieldLabel" for="message">Message:</label>
+          <textarea
+            autocomplete="on"
+            name="message"
+            id="message"
+            required
+            cols="30"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
+        </p>
+        <div class="buttonSendContainer">
+          <button><i class="fa-solid fa-paper-plane"></i> Send</button>
+        </div>
+      </form>
+    </section>
+    <footer id="socialNetworks">
+      <h2>Social Media</h2>
+      <ul class="social-media-list">
+        <li>
+          <a href="https://github.com/SebasProgrammer2021/" target="_blank">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/sebastian-valencia-21b257a9/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/sebas_val_ing/" target="_blank">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script type="module" src="./index.js" defer></script>
+  </body>
+</html>

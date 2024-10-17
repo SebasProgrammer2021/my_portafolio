@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins";
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 5rem;
+}
+
+section {
+  padding: 2rem 10px;
+}
+
+form {
+  width: 100%;
+}
+
+form button {
+  background: red;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-color: red;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: darkred;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+footer {
+  border-top: 1px solid black;
+  margin-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.aboutMeContenteContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutMeProfileImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMeProfileImage {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  height: 400px;
+  width: auto;
+}
+
+.aboutMeProfileDescription {
+  text-align: center;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projectContainer {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.projectTitlle {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formFieldInput,
+textarea {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formFieldInput:focus,
+textarea:focus {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.navbarList {
+  list-style: none;
+  padding: 0;
+}
+
+.navbarListItem {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.navbarListItem:hover {
+  background-color: red;
+  border-radius: 20px;
+}
+
+.navbarListItemLink {
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.navbarListItemLink:hover,
+.navbarListItem:hover .navbarListItemLink {
+  color: white;
+  font-weight: bold;
+}
+
+.aboutMeProfileDescription__quote {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.starChecked {
+  color: orange;
+
+  &:hover {
+    transform: scale(1.25) rotate(10deg);
+  }
+}
+
+.skillContainer {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skillName {
+  text-transform: uppercase;
+}
+
+.starsRatingContainer {
+  text-align: right;
+  background-color: #cc0000;
+  padding: 4.8px 13px;
+  border-radius: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.projectDescriptionButton {
+  background: coral;
+  padding: 6px;
+  border-radius: 12px;
+  color: black;
+  font-weight: 700;
+}
+
+.usedTechTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.social-media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media-list a {
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.social-media-list i {
+  font-size: 34px;
+  /* Cambia el tamaño según lo que necesites */
+}
+
+.social-media-list a:hover {
+  color: #666;
+}
+
+.fa {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.welcome h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navbarList {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonSendContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  form {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectsContainer {
+    flex-direction: row;
+  }
+
+  .projectContainer {
+    width: 45%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .aboutMeContenteContainer {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .projectDescriptionContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projectDescriptionButton {
+    text-wrap: nowrap;
+    height: fit-content;
+  }
+
+  .aboutMeProfileDescription {
+    margin-top: 50px;
+    width: 40%;
+  }
+
+}
