@@ -1,0 +1,30 @@
+{
+  "es": {
+    "aboutMe": "Sobre Mí",
+    "contact": "Contáctame",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "name": "Nombre",
+    "projects": "Proyectos",
+    "seeProject": "Ver proyecto",
+    "send": "Enviar",
+    "skills": "Habilidades",
+    "socialMedia": "Redes Sociales",
+    "technologies": "Tecnologías",
+    "welcome": "Bienvenido a Mi Portafolio"
+  },
+  "en": {
+    "aboutMe": "About Me",
+    "contact": "Contact Me",
+    "email": "Email",
+    "message": "Message",
+    "name": "Name",
+    "projects": "Projects",
+    "seeProject": "See project",
+    "send": "Send",
+    "skills": "Skills",
+    "socialMedia": "Social Media",
+    "technologies": "Technologies",
+    "welcome": "Welcome to My Portfolio"
+  }
+}
