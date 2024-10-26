@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  release:
+    types: [published]
+  create:
+    tags:
+      - '*'
 
 jobs:
   deploy:
