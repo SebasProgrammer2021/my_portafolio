@@ -1,62 +1,45 @@
+import { fetchPortafolioData, loadTranslations } from './api.js';
+import { renderSkills, renderProjects } from './render.js';
+import { updateContent } from './content.js';
 
-const fetchPortafolioData = async () => {
+const init = async () => {
   try {
-    const response = await fetch('data.json');
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error al cargar los datos:', error);
-    return [];
-  }
-}
+    const translations = await loadTranslations();
+    const data = await fetchPortafolioData();
 
-const renderSkills = (skillsData) => {
-  let html = '';
-  skillsData.forEach((skill) => {
-    html += `<div class="skillContainer">
-      <h3 class="skillName">${skill.skillName}</h3>
-      <div class="starsRatingContainer">`;
+    if (translations && data) {
+      const updateLanguage = (language) => {
+        updateContent(translations, language);
+        
+        const skillsContainer = document.getElementById("skillsContainer");
+        const projectsContainer = document.querySelector(".projectsContainer");
+        
+        if (skillsContainer && data.skillsData) {
+          skillsContainer.innerHTML = renderSkills(data.skillsData, language);
+        }
+        
+        if (projectsContainer && data.projectsData) {
+          projectsContainer.innerHTML = renderProjects(data.projectsData, language, translations);
+        }
+      };
 
-    for (let i = 0; i < 5; i++) {
-      html += `<span class="fa fa-star ${i < skill.skillCalification ? 'starChecked' : ''}"></span>`;
+      // Establecer el valor del selector de idioma a 'en' (inglés)
+      const languageSelector = document.getElementById('languageSelector');
+      languageSelector.value = 'en';
+
+      // Inicializar con el idioma inglés
+      updateLanguage('en');
+
+      // Añadir evento para cambio de idioma
+      languageSelector.addEventListener('change', (e) => {
+        updateLanguage(e.target.value);
+      });
+    } else {
+      console.error('No se pudieron cargar los datos o las traducciones.');
     }
-
-    html += `</div></div>`;
-  });
-  return html;
-}
-
-const renderProjects = (projectsData) => {
-  let html = '';
-  projectsData.forEach((project) => {
-    html += `
-    <div class="projectContainer">
-    <h3 class="projectTitlle">${project.projectTitle}</h3>
-    <div class="projectDescriptionContainer">
-      <p>
-      ${project.projectDescription}
-      </p>
-
-      <span class="usedTechTitle">Tecnologias empleadas</span>
-      <p>
-      ${project.projectTechnologies}
-      </p>
-      <a class="projectDescriptionButton" href="${project.projectLinkWeb}" target="_blank" rel="noopener noreferrer">See project</a>
-    </div>
-  </div>`;
-    html += `</div></div>`;
-
-  });
-  return html;
-}
-
-
-
-window.onload = async () => {
-  const data = await fetchPortafolioData();
-  const contenedorHabilidades = document.getElementById("skillsContainer");
-  const projectsContainer = document.getElementsByClassName("projectsContainer")[0];
-  contenedorHabilidades.innerHTML = renderSkills(data.skillsData);
-  projectsContainer.innerHTML = renderProjects(data.projectsData);
+  } catch (error) {
+    console.error('Error al inicializar la aplicación:', error);
+  }
 };
 
+window.onload = init;
