@@ -28,21 +28,3 @@ jobs:
 
       - name: Deploy to Surge
         run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
-
-      - name: Increment version and create new tag
-        run: |
-          # Leer la versión actual
-          CURRENT_VERSION=$(cat VERSION.txt)
-          # Extraer los números de versión
-          IFS='.' read -r MAJOR MINOR PATCH <<< "${CURRENT_VERSION//v/}"
-          # Incrementar la versión menor
-          MINOR=$((MINOR + 1))
-          # Crear la nueva versión
-          NEW_VERSION="v${MAJOR}.${MINOR}.${PATCH}-$(date +'%d-%m-%Y')"
-          echo "$NEW_VERSION" > VERSION.txt
-          git tag "$NEW_VERSION"
-          git add VERSION.txt
-          git commit -m "Increment version to $NEW_VERSION"
-          git push origin main --tags
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
