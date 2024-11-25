@@ -1,0 +1,13 @@
+  {
+    "projectTitle": {
+      "es": "Landing usabuying group",
+      "en": "Landing usabuying group"
+    },
+    "projectDescription": {
+      "es": "Es una página de aterrizaje o informativa para explicar el modelo de negocio, que contiene varias secciones detallando su funcionamiento y beneficios. Esta tiene poca interactividad, aunque cuenta con una sección de inicio de sesión para dirigir al usuario al portal donde se detalla la información sobre su negocio.",
+      "en": "It is a landing or informational page to explain the business model, which contains several sections detailing its operation and benefits. This has little interactivity, although it has a login section to direct the user to the portal where the information about their business is detailed."
+    },
+    "projectLinkWeb": "https://landing.usabuying.group/",
+    "projectLinkRepo": "",
+    "projectTechnologies": "React"
+  }
