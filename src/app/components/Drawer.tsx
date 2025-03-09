@@ -1,9 +1,5 @@
-'use client'
-
-import { useState } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } from '@headlessui/react'
 import { IoCloseOutline } from "react-icons/io5";
-import drawerStyles from './styles/drawer.module.css';
 
 interface Props {
   open: boolean;
@@ -11,7 +7,6 @@ interface Props {
 }
 
 export default function Drawer({ open, setOpen }: Props) {
-  // const [open, setOpen] = useState(false)
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
@@ -46,16 +41,11 @@ export default function Drawer({ open, setOpen }: Props) {
                   <nav className="navbar">
                     <ul className="navbarList flex flex-col gap-5 text-black items-center">
                       <li id="itemEnlace" className="navbarListItem">
-                        <a href="/" className="navbarListItemLink" id="inicio"
-                        >Inicio</a
-                        >
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
                         <a
-                          href="#welcome"
+                          href="#home"
                           className="navbarListItemLink"
-                          id="welcome"
-                        >Welcome</a
+                          id="home"
+                        >Home</a
                         >
                       </li>
                       <li id="itemEnlace" className="navbarListItem">
@@ -86,15 +76,15 @@ export default function Drawer({ open, setOpen }: Props) {
                         <a
                           href="#contactMe"
                           className="navbarListItemLink"
-                          id="contactForm"
-                        >Contact Form</a
+                          id="contact"
+                        >Contact</a
                         >
                       </li>
                     </ul>
-                    <select id="languageSelector">
+                    {/* <select id="languageSelector">
                       <option value="es">Español</option>
                       <option value="en">English</option>
-                    </select>
+                    </select> */}
                   </nav>
                 </div>
               </div>

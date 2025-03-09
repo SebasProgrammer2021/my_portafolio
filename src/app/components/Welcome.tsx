@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Welcome = () => {
   return (
-    <section className="welcome flex flex-col items-center h-screen" id="welcome">
+    <section className="welcome flex flex-col items-center h-screen pt-3" id="home">
       <h2 className="welcomeTitle text-xl font-semibold mb-3.5">Hey welcome to my world</h2>
       <Image
         className="w-50 h-80"
