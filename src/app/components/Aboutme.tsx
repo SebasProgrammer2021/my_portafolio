@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdCloudDownload } from "react-icons/md";
-
+import Link from 'next/link'
 
 export const Aboutme = () => {
   return (
@@ -25,10 +25,10 @@ export const Aboutme = () => {
             Gitlab, Scrum, Kanban, task management tools, teamwork, excellent
             communication skills, and a strong focus on results.
           </span>
-          <a className="getCvLink mt-6 flex gap-3 justify-self-center items-center rounded-full border border-white p-3" href="https://www.canva.com/design/DAFHqHRsvnc/2UxPP4G5oDsF1qzJt3L_MA/edit?utm_content=DAFHqHRsvnc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+          <Link className="getCvLink mt-6 flex gap-3 justify-self-center items-center rounded-full border border-white p-3" href="https://www.canva.com/design/DAFHqHRsvnc/2UxPP4G5oDsF1qzJt3L_MA/edit?utm_content=DAFHqHRsvnc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
             <MdCloudDownload />
             Download cv
-          </a>
+          </Link>
         </p>
       </div>
     </section>
