@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import React from 'react'
 
 const ContactPage = () => {
   return (
     <div>ContactPage
-      <a href="/">home</a>
+      <Link href="/">home</Link>
     </div>
   )
 }

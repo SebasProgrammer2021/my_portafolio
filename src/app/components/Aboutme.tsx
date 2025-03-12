@@ -12,8 +12,8 @@ export const Aboutme = () => {
         </div>
         <p className="aboutMeProfileDescription">
           <span className="aboutMeProfileDescription__quote">
-            "You don't have to be great to start, but you have to start to be
-            great" - Zig Ziglar
+            &quot;You don't have to be great to start, but you have to start to be
+            great&quot; - Zig Ziglar
           </span>
           <span className="aboutMe_mainDescription">
             Inspired by this quote, I completed my degree in Systems Engineering
