@@ -12,7 +12,7 @@ export const Aboutme = () => {
         </div>
         <p className="aboutMeProfileDescription">
           <span className="aboutMeProfileDescription__quote">
-            &quot;You don't have to be great to start, but you have to start to be
+            &quot;You don&apos;t have to be great to start, but you have to start to be
             great&quot; - Zig Ziglar
           </span>
           <span className="aboutMe_mainDescription">
