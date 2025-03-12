@@ -1,4 +1,5 @@
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } from '@headlessui/react'
+import Link from 'next/link';
 import { IoCloseOutline } from "react-icons/io5";
 
 interface Props {
@@ -41,44 +42,19 @@ export default function Drawer({ open, setOpen }: Props) {
                   <nav className="navbar">
                     <ul className="navbarList flex flex-col gap-5 text-black items-center">
                       <li id="itemEnlace" className="navbarListItem">
-                        <a
-                          href="#home"
-                          className="navbarListItemLink"
-                          id="home"
-                        >Home</a
-                        >
+                        <Link href="#home" className="navbarListItemLink" id="home">Home</Link>
                       </li>
                       <li id="itemEnlace" className="navbarListItem">
-                        <a
-                          href="#aboutMe"
-                          className="navbarListItemLink"
-                          id="aboutMe"
-                        >About me</a
-                        >
+                        <Link href="#aboutMe" className="navbarListItemLink" id="aboutMe">About me</Link>
                       </li>
                       <li id="itemEnlace" className="navbarListItem">
-                        <a
-                          href="#skills"
-                          className="navbarListItemLink"
-                          id="skills"
-                        >Skills</a
-                        >
+                        <Link href="#skills" className="navbarListItemLink" id="skills">Skills</Link>
                       </li>
                       <li id="itemEnlace" className="navbarListItem">
-                        <a
-                          href="#projects"
-                          className="navbarListItemLink"
-                          id="projects"
-                        >Projects</a
-                        >
+                        <Link href="#projects" className="navbarListItemLink" id="projects">Projects</Link>
                       </li>
                       <li id="itemEnlace" className="navbarListItem">
-                        <a
-                          href="#contactMe"
-                          className="navbarListItemLink"
-                          id="contact"
-                        >Contact</a
-                        >
+                        <Link href="#contactMe" className="navbarListItemLink" id="contact">Contact</Link>
                       </li>
                     </ul>
                     {/* <select id="languageSelector">
