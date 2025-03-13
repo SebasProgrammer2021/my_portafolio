@@ -54,7 +54,7 @@ export default function Drawer({ open, setOpen }: Props) {
                         <Link href="#projects" className="navbarListItemLink" id="projects">Projects</Link>
                       </li>
                       <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#contactMe" className="navbarListItemLink" id="contact">Contact</Link>
+                        <Link href="contact" className="navbarListItemLink" id="contact">Contact</Link>
                       </li>
                     </ul>
                     {/* <select id="languageSelector">
