@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const useTypingTextAnimation = (words: string[], speed: number, skipDelay: number) => {
   const [part, setPart] = useState('');
