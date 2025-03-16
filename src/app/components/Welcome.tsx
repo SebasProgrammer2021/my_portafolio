@@ -3,15 +3,16 @@
 import React, { useEffect, useRef } from 'react'
 import mePicture from '../../../public/me.webp';
 import Image from "next/image";
-import styles from './styles/aboutme.module.css';
+import styles from './styles/home.module.css';
 import { useTypingTextAnimation } from '../hooks/useTypingTextAnimation';
 
 export const Welcome = () => {
   const wordRef = useRef<HTMLDivElement>(null);
   const words = [
-    'Frontend developer',
+    'React Frontend developer',
     'System and computing engineer',
     'VTEX frontend developer',
+    'Frontend Mentor'
   ];
   const speed = 40;
   const skipDelay = 15;
@@ -24,20 +25,20 @@ export const Welcome = () => {
   }, [part]);
 
   return (
-    <section className="welcome flex flex-col items-center h-screen pt-3">
+    <section className="welcome flex flex-col items-center h-full pt-3 pb-32">
+      <div className='messageContainer flex gap-5 mt-28 h-10'>
+        <p className="myRole mt-2 text-lg"></p>
+        <div className={`text-2xl font-semibold uppercase text-center`} ref={wordRef}></div>
+      </div>
+      <h1 className="myName mt-8 text-xl font-bold text-center">Hi! , I'm Sebastián Valencia</h1>
       <Image
-        className="w-60 h-90 rounded-xl"
+        className="w-auto h-auto rounded-full object-cover aspect-square mt-16"
         src={mePicture}
         alt="profile image"
-        loading="lazy"
         width={100}
         height={100}
+        priority
       />
-      <h1 className="myName mt-10 text-xl font-bold text-center">Hi! , I'm Sebastián Valencia</h1>
-      <div className='messageContainer flex gap-5'>
-        <p className="myRole mt-2 text-lg"></p>
-        <div className={styles.word} ref={wordRef}></div>
-      </div>
     </section>
   )
 }
