@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const Aboutme = () => {
   return (
-    <section className="aboutMe" id="aboutMe">
+    <section className="aboutMe pt-16" id="aboutMe">
       <h2 className="aboutMeTitle mb-3 text-2xl font-semibold">About me</h2>
       <div className="aboutMeContenteContainer">
         <p className="aboutMeProfileDescription text-lg">
@@ -23,7 +23,7 @@ export const Aboutme = () => {
             communication skills, and a strong focus on results.
           </span>
           <Link className="getCvLink mt-6 flex gap-3 justify-self-center items-center rounded-full border border-white p-3"
-            href="https://www.canva.com/design/DAFHqHRsvnc/2UxPP4G5oDsF1qzJt3L_MA/edit?utm_content=DAFHqHRsvnc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            href="https://app.enhancv.com/share/40a22736/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
             target="_blank"
           >
             <MdCloudDownload />

@@ -9,6 +9,14 @@ interface Props {
 
 export default function Drawer({ open, setOpen }: Props) {
 
+  const navigation = [
+    { name: 'Home', href: '#home' },
+    { name: 'About me', href: '#aboutMe' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
+  ]
+
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
       <DialogBackdrop
@@ -40,21 +48,11 @@ export default function Drawer({ open, setOpen }: Props) {
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
                   <nav className="navbar">
                     <ul className="navbarList flex flex-col gap-5 text-black items-center text-xl">
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#home" className="navbarListItemLink" id="home">Home</Link>
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#aboutMe" className="navbarListItemLink" id="aboutMe">About me</Link>
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#skills" className="navbarListItemLink" id="skills">Skills</Link>
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#projects" className="navbarListItemLink" id="projects">Projects</Link>
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="contact" className="navbarListItemLink" id="contact">Contact</Link>
-                      </li>
+                      {navigation.map((item) => (
+                        <li key={item.name} id="itemEnlace" className="navbarListItem">
+                          <Link href={item.href} className="navbarListItemLink" onClick={() => setOpen(false)}>{item.name}</Link>
+                        </li>
+                      ))}
                     </ul>
                     {/* <select id="languageSelector">
                       <option value="es">Español</option>
