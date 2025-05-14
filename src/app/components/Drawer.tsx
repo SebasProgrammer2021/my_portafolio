@@ -14,7 +14,7 @@ export default function Drawer({ open, setOpen }: Props) {
     { name: 'About me', href: '#aboutMe' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact', href: '/contact' },
   ]
 
   return (
