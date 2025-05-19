@@ -26,7 +26,7 @@ export const Welcome = () => {
   return (
     <section className="welcome flex flex-col lg:flex-row items-center lg:justify-center h-full pt-3 pb-32 lg:w-full lg:gap-10">
       <div className='flex flex-col lg:gap-8 lg:justify-between lg:w-3/6 lg:flex-col-reverse'>
-        <a href='https://www.linkedin.com/in/sebasti%C3%A1n-londo%C3%B1o-valencia/' className='hidden lg:flex mt-20 border border-gray-400 p-5 rounded-2xl w-fit text-black text-xl'>
+        <a href='https://www.linkedin.com/in/sebasti%C3%A1n-londo%C3%B1o-valencia/' target='_blank' className='hidden lg:flex mt-20 border border-gray-400 p-5 rounded-2xl w-fit text-black text-xl'>
           Contacta conmigo
         </a>
         <div className='messageContainer flex gap-5 mt-28 h-10 lg:mt-5'>
