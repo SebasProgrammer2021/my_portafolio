@@ -5,9 +5,9 @@ import { skillsData } from '../constants/skillsIcons';
 export const Skills = () => {
 
   return (
-    <section className='flex flex-col items-center h-screen pt-24' id='skills'>
-      <h2 className='text-2xl font-semibold mb-3'>Skills</h2>
-      <div className='grid grid-cols-3 gap-5 justify-items-center'>
+    <section className='flex flex-col items-center h-screen lg:h-auto lg:pb-50 pt-24' id='skills'>
+      <h2 className='text-2xl lg:text-4xl font-semibold mb-3'>Skills</h2>
+      <div className='grid grid-cols-3 gap-5 justify-items-center md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10'>
         {
           skillsData.map((skill) => (
             <SkillItem

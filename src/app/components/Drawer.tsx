@@ -1,6 +1,6 @@
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } from '@headlessui/react'
-import Link from 'next/link';
 import { IoCloseOutline } from "react-icons/io5";
+import Navbar from './Navbar';
 
 interface Props {
   open: boolean;
@@ -8,14 +8,6 @@ interface Props {
 }
 
 export default function Drawer({ open, setOpen }: Props) {
-
-  const navigation = [
-    { name: 'Home', href: '#home' },
-    { name: 'About me', href: '#aboutMe' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '/contact' },
-  ]
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
@@ -46,19 +38,7 @@ export default function Drawer({ open, setOpen }: Props) {
                   <DialogTitle className="text-2xl font-bold text-gray-900 mt-6">Menu</DialogTitle>
                 </div>
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                  <nav className="navbar">
-                    <ul className="navbarList flex flex-col gap-5 text-black items-center text-xl">
-                      {navigation.map((item) => (
-                        <li key={item.name} id="itemEnlace" className="navbarListItem">
-                          <Link href={item.href} className="navbarListItemLink" onClick={() => setOpen(false)}>{item.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                    {/* <select id="languageSelector">
-                      <option value="es">Español</option>
-                      <option value="en">English</option>
-                    </select> */}
-                  </nav>
+                  <Navbar setOpen={setOpen} />
                 </div>
               </div>
             </DialogPanel>

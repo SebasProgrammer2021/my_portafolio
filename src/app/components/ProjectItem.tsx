@@ -9,7 +9,7 @@ export const ProjectItem = ({ project }: { project: IProjectItem }) => {
       <div className='relative group'>
         <Image className='w-40 h-50 rounded-xl object-cover object-center' src={project.image} alt="project image" width={100} height={100} />
         <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-60 opacity-0 group-hover:opacity-80 transition-opacity duration-300 rounded-xl">
-          <a href={project.websiteLink} className="text-white text-lg font-semibold border border-white px-4 py-2 rounded-4xl hover:cursor-pointer">
+          <a href={project.websiteLink} target='_blank' className="text-white text-lg font-semibold border border-white px-4 py-2 rounded-4xl hover:cursor-pointer">
             Ver sitio web
           </a>
         </div>

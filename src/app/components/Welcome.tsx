@@ -3,7 +3,6 @@
 import React, { useEffect, useRef } from 'react'
 import mePicture from '../../../public/me.webp';
 import Image from "next/image";
-import styles from './styles/home.module.css';
 import { useTypingTextAnimation } from '../hooks/useTypingTextAnimation';
 
 export const Welcome = () => {
@@ -25,14 +24,20 @@ export const Welcome = () => {
   }, [part]);
 
   return (
-    <section className="welcome flex flex-col items-center h-full pt-3 pb-32">
-      <div className='messageContainer flex gap-5 mt-28 h-10'>
-        <p className="myRole mt-2 text-lg"></p>
-        <div className={`text-2xl font-semibold uppercase text-center`} ref={wordRef}></div>
+    <section className="welcome flex flex-col lg:flex-row items-center lg:justify-center h-full pt-3 pb-32 lg:w-full lg:gap-10">
+      <div className='flex flex-col lg:gap-8 lg:justify-between lg:w-3/6 lg:flex-col-reverse'>
+        <a href='https://www.linkedin.com/in/sebasti%C3%A1n-londo%C3%B1o-valencia/' className='hidden lg:flex mt-20 border border-gray-400 p-5 rounded-2xl w-fit text-black text-xl'>
+          Contacta conmigo
+        </a>
+        <div className='messageContainer flex gap-5 mt-28 h-10 lg:mt-5'>
+          <div className={`text-2xl lg:text-4xl font-semibold uppercase text-center lg:text-left md:w-full`} ref={wordRef}></div>
+        </div>
+        <h1 className="myName mt-8 text-xl lg:text-4xl font-bold text-center lg:text-left">
+          Hi! , I'm Sebastián Valencia
+        </h1>
       </div>
-      <h1 className="myName mt-8 text-xl font-bold text-center">Hi! , I'm Sebastián Valencia</h1>
       <Image
-        className="w-auto h-auto rounded-full object-cover aspect-square mt-16"
+        className="w-auto h-auto rounded-full object-cover aspect-square mt-16 lg:mt-0 lg:rounded-none lg:h-full lg:w-1/4"
         src={mePicture}
         alt="profile image"
         width={100}
