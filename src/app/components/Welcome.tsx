@@ -32,7 +32,7 @@ export const Welcome = () => {
         <div className='messageContainer flex gap-5 mt-28 h-10 lg:mt-5'>
           <div className={`text-2xl lg:text-4xl font-semibold uppercase text-center lg:text-left md:w-full`} ref={wordRef}></div>
         </div>
-        <h1 className="myName mt-8 text-xl lg:text-4xl font-bold text-center lg:text-left">
+        <h1 className="myName mt-8 text-xl lg:text-5xl font-bold text-center lg:text-left">
           Hi! , I'm Sebastián Valencia
         </h1>
       </div>

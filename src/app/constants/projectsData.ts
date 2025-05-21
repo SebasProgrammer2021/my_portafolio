@@ -1,4 +1,4 @@
-import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoReact } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoReact, IoLogoGithub } from "react-icons/io5";
 import { SiVtex } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 
@@ -20,8 +20,8 @@ export const projectData = [
     ],
   },
   {
-    id:2,
-    image:"/ptll_empresarios_haceb.webp",
+    id: 2,
+    image: "/ptll_empresarios_haceb.webp",
     title: "Empresarios Haceb",
     description: "Plataforma ecommerce para la venta de productos de la marca Haceb por medio de referidos. El cual es desarrollado completamente en VTEX, ademas posee un panel de administración para la gestión del empresario.",
     type: "Ecommerce",
@@ -32,6 +32,36 @@ export const projectData = [
       { name: "CSS3", icon: IoLogoCss3, color: "rgb(33 150 243)" },
       { name: "VTEX", icon: SiVtex, color: "#e31c58" },
       { name: "TypeScript", icon: BiLogoTypescript, color: "#007acc" },
+      { name: "React", icon: IoLogoReact, color: "#61DAFB" },
+    ],
+  },
+  {
+    id: 3,
+    image: "/ptll_tita_test.webp",
+    title: "Tita Media Test",
+    description: "Aplicación web que permite iniciar sesión con Google, permite visualizar un feed de publicaciones con detalles como likes y comentarios. Incluye modal de información de usuario, filtrado por etiquetas y muestra la información del usuario autenticado en el encabezado.",
+    type: "Prueba tecnica",
+    websiteLink: "https://sebasprogrammer2021.github.io/Tita-Media-prueba-t-cnica/",
+    technologies: [
+      { name: "React", icon: IoLogoReact, color: "#61DAFB" },
+      { name: "TanStack Query", icon: IoLogoReact, color: "#FF69B4" },
+      { name: "Github-Pages", icon: IoLogoGithub, color: "#fff" },
+      { name: "JavaScript", icon: IoLogoJavascript, color: "rgb(247 223 30)" },
+      { name: "HTML5", icon: IoLogoHtml5, color: "rgb(239 68 68)" },
+      { name: "CSS3", icon: IoLogoCss3, color: "rgb(33 150 243)" },
+    ],
+  },
+  {
+    id: 4,
+    image: "/ptll_movie_searcher.webp",
+    title: "Movie Searcher",
+    description: "Buscador de películas por nombre, que permite obtener la imagen, nombre y año de lanzamiento de la película en la vista de resultados. En la vista detallada de la película, muestra el nombre de la película, su portada, los actores principales y una descripción.",
+    type: "Proyecto de curso",
+    websiteLink: "https://movie-searcher-udemy.surge.sh/",
+    technologies: [
+      { name: "JavaScript", icon: IoLogoJavascript, color: "rgb(247 223 30)" },
+      { name: "HTML5", icon: IoLogoHtml5, color: "rgb(239 68 68)" },
+      { name: "CSS3", icon: IoLogoCss3, color: "rgb(33 150 243)" },
       { name: "React", icon: IoLogoReact, color: "#61DAFB" },
     ],
   }
