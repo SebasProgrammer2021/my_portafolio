@@ -1,6 +1,6 @@
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } from '@headlessui/react'
-import Link from 'next/link';
 import { IoCloseOutline } from "react-icons/io5";
+import Navbar from './Navbar';
 
 interface Props {
   open: boolean;
@@ -38,29 +38,7 @@ export default function Drawer({ open, setOpen }: Props) {
                   <DialogTitle className="text-2xl font-bold text-gray-900 mt-6">Menu</DialogTitle>
                 </div>
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                  <nav className="navbar">
-                    <ul className="navbarList flex flex-col gap-5 text-black items-center text-xl">
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#home" className="navbarListItemLink" id="home">Home</Link>
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#aboutMe" className="navbarListItemLink" id="aboutMe">About me</Link>
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#skills" className="navbarListItemLink" id="skills">Skills</Link>
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="#projects" className="navbarListItemLink" id="projects">Projects</Link>
-                      </li>
-                      <li id="itemEnlace" className="navbarListItem">
-                        <Link href="contact" className="navbarListItemLink" id="contact">Contact</Link>
-                      </li>
-                    </ul>
-                    {/* <select id="languageSelector">
-                      <option value="es">Español</option>
-                      <option value="en">English</option>
-                    </select> */}
-                  </nav>
+                  <Navbar setOpen={setOpen} />
                 </div>
               </div>
             </DialogPanel>
