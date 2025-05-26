@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const Aboutme = () => {
   return (
-    <section className="aboutMe pt-16 md:pt-10 lg:pb-20" id="aboutMe">
+    <section className="aboutMe pt-16 md:pt-10 lg:pb-20 md:text-center" id="aboutMe">
       <h2 className="aboutMeTitle mb-3 text-2xl lg:text-4xl font-semibold dark:text-white">About me</h2>
       <div className="aboutMeContenteContainer">
         <div className="aboutMeProfileDescription text-lg">
@@ -12,7 +12,7 @@ export const Aboutme = () => {
             &quot;You don&apos;t have to be great to start, but you have to start to be
             great&quot; - Zig Ziglar
           </span>
-          <p className="md:text-xl lg:max-w-5xl dark:text-white">
+          <p className="md:text-xl dark:text-white">
             Inspired by this quote, I completed my degree in Systems Engineering
             at the University of Quindio. To strengthen my academic training, I
             also obtained a Technician in Software Development from SENA. I am
