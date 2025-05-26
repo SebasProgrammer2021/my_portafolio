@@ -44,7 +44,6 @@ export const projectData = [
     websiteLink: "https://sebasprogrammer2021.github.io/Tita-Media-prueba-t-cnica/",
     technologies: [
       { name: "React", icon: IoLogoReact, color: "#61DAFB" },
-      { name: "TanStack Query", icon: IoLogoReact, color: "#FF69B4" },
       { name: "Github-Pages", icon: IoLogoGithub, color: "#fff" },
       { name: "JavaScript", icon: IoLogoJavascript, color: "rgb(247 223 30)" },
       { name: "HTML5", icon: IoLogoHtml5, color: "rgb(239 68 68)" },
@@ -63,6 +62,21 @@ export const projectData = [
       { name: "HTML5", icon: IoLogoHtml5, color: "rgb(239 68 68)" },
       { name: "CSS3", icon: IoLogoCss3, color: "rgb(33 150 243)" },
       { name: "React", icon: IoLogoReact, color: "#61DAFB" },
+    ],
+  },
+  {
+    id: 5,
+    image: "/ptll_credicalidda.webp",
+    title: "Credicalidda",
+    description: "Página de contenido informativo sobre servicios ofrecidos por Credicalidda, como preguntas frecuentes, información de contacto, terminos y condiciones y políticas de privacidad.",	
+    type: "Web Informativa",
+    websiteLink: "https://www.credicalidda.com.pe/paginas-informativas#selected=Preguntas-frecuentes",
+    technologies: [
+      { name: "JavaScript", icon: IoLogoJavascript, color: "rgb(247 223 30)" },
+      { name: "HTML5", icon: IoLogoHtml5, color: "rgb(239 68 68)" },
+      { name: "CSS3", icon: IoLogoCss3, color: "rgb(33 150 243)" },
+      { name: "React", icon: IoLogoReact, color: "#61DAFB" },
+      { name: "VTEX", icon: SiVtex, color: "#e31c58" },
     ],
   }
 ]

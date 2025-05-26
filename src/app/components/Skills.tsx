@@ -6,7 +6,7 @@ export const Skills = () => {
   
   return (
     <section className='flex flex-col items-center h-screen md:h-auto md:pb-50 pt-24' id='skills'>
-      <h2 className='text-2xl lg:text-4xl font-semibold mb-3'>Skills</h2>
+      <h2 className='text-2xl lg:text-4xl font-semibold mb-3 dark:text-white'>Skills</h2>
       <div className='grid grid-cols-3 gap-5 justify-items-center md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10'>
         {
           skillsData.map((skill) => (

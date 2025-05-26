@@ -30,7 +30,7 @@ export const skillsData = [
   },
   {
     id: 4,
-    icon: <SiJavascript size={50} color='#F7DC6F' />,
+    icon: <SiJavascript size={50} color='#FFFF00' />,
     name: 'JavaScript'
   },
   {
