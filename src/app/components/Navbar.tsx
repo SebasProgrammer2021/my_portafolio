@@ -29,11 +29,11 @@ const Navbar = ({ setOpen }: INavbarProps) => {
   // }
 
   return (
-    <nav className="navbar lg:mb-20 lg:bg-white lg:w-full rounded-3xl">
+    <nav className="navbar lg:bg-white lg:w-fit rounded-3xl">
       <ul className="navbarList flex flex-col gap-5 lg:gap-0 text-black items-center text-xl lg:flex-row lg:w-full lg:justify-center">
         {navigation.map((item) => (
-          <li key={item.name} id="itemEnlace" className="navbarListItem flex items-center lg:hover:bg-gray-400 dark:text-white">
-            <Link href={item.href} className="navbarListItemLink lg:p-3" onClick={() => setOpen && setOpen(false)}>{item.name}</Link>
+          <li key={item.name} id="itemEnlace" className="navbarListItem flex items-center lg:hover:bg-gray-400">
+            <Link href={item.href} className="navbarListItemLink lg:p-3 " onClick={() => setOpen && setOpen(false)}>{item.name}</Link>
           </li>
         ))}
       </ul>

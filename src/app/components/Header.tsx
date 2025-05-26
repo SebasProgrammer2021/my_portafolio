@@ -41,13 +41,16 @@ export const Header = () => {
   }
 
   return (
-    <header className='flex justify-between items-center pt-10 lg:pt-0 fixed top-0 w-full' id='Header'>
-      <a className="text-black text-3xl font-semibold lg:hidden dark:text-white w-full" style={{ color: darkMode === "dark" ? "white" : "black" }} href='#home'>My portfolio</a>
-      <div className='hidden lg:flex w-full'>
+    <header className='flex justify-between items-center pt-10 fixed top-0 w-full' id='Header'>
+      <a className="text-black text-3xl font-semibold dark:text-white lg:w-fit lg:text-nowrap" style={{ color: darkMode === "dark" ? "white" : "black" }} href='#home'>My portfolio</a>
+      <div className='hidden lg:flex w-full lg:justify-around items-center'>
         <Navbar />
+        <button className='text-black dark:text-white lg:flex lg:justify-self-end' onClick={changeThemeColor}>
+          {darkMode === "dark" ? <RiMoonLine size={30} /> : <RiSunLine size={30} />}
+        </button>
       </div>
       <div className='flex items-center gap-5 justify-end pr-8 '>
-        <button className='text-black dark:text-white' onClick={changeThemeColor}>
+        <button className='text-black dark:text-white lg:hidden' onClick={changeThemeColor}>
           {darkMode === "dark" ? <RiMoonLine size={30} /> : <RiSunLine size={30} />}
         </button>
         <button className='flex lg:hidden text-black dark:text-white' onClick={() => setOpen(!open)}>
