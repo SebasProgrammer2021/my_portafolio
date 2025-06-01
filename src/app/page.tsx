@@ -6,7 +6,7 @@ import { Welcome } from "./components/Welcome"
 
 export default function App() {
   return (
-    <div className="dark:bg-neutral-900 p-5 lg:pt-20">
+    <div className="p-5 lg:pt-20">
       <Header />
       <Welcome />
       <Aboutme />

@@ -41,7 +41,7 @@ export const Header = () => {
   }
 
   return (
-    <header className='flex justify-between items-center pt-10 fixed top-0 w-full' id='Header'>
+    <header className='flex justify-between items-center pt-10 fixed top-0 w-full z-[1]' id='Header'>
       <a className="text-black text-3xl font-semibold dark:text-white lg:w-fit lg:text-nowrap" style={{ color: darkMode === "dark" ? "white" : "black" }} href='#home'>My portfolio</a>
       <div className='hidden lg:flex w-full lg:justify-around items-center'>
         <Navbar />
