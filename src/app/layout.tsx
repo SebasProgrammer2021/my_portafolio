@@ -28,7 +28,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} `}>
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-white dark:bg-neutral-900 container`}>
         <App />
       </body>
     </html>

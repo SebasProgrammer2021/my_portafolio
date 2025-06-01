@@ -14,7 +14,7 @@ export const ProjectItem = ({ project }: { project: IProjectItem }) => {
           </a>
         </div>
       </div>
-      <section className={`${projectStyles.projectInfo} p-4 bg-slate-100 dark:bg-[#25272a] rounded-lg max-h-[330px] h-full overflow-y-auto`}>
+      <section className={`${projectStyles.projectInfo} p-4 bg-slate-100 dark:bg-[#25272a] rounded-lg  h-full`}>
         <h4 className="projectInfoTitle text-lg font-semibold w-auto text-black dark:text-white">{project.title}</h4>
         <p className="description mt-4 text-black dark:text-white">
           {project.description}
