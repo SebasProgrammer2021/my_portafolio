@@ -1,6 +1,27 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@utility container {
+  padding-inline: 15px;
+  margin-inline: auto;
+
+  @variant sm {
+    padding-inline: 30px;
+  }
+
+  @variant md {
+    padding-inline: 40px;
+  }
+
+  @variant lg {
+    padding-inline: 80px;
+  }
+
+  @variant xl {
+    padding-inline: 120px;
+  }
+}
+
 html,
 body {
   width: 100%;

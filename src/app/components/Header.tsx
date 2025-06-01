@@ -41,15 +41,18 @@ export const Header = () => {
   }
 
   return (
-    <header className='flex justify-between items-center pt-10 fixed top-0 w-full z-[1]' id='Header'>
-      <a className="text-black text-3xl font-semibold dark:text-white lg:w-fit lg:text-nowrap" style={{ color: darkMode === "dark" ? "white" : "black" }} href='#home'>My portfolio</a>
+    <header className='flex justify-between items-center pt-10 fixed top-0 z-[1] w-full' id='Header'>
+      <a className="text-black text-3xl font-semibold dark:text-white lg:w-fit lg:text-nowrap"
+        style={{ color: darkMode === "dark" ? "white" : "black" }} href='#home'>
+          My portfolio
+          </a>
       <div className='hidden lg:flex w-full lg:justify-around items-center'>
         <Navbar />
         <button className='text-black dark:text-white lg:flex lg:justify-self-end' onClick={changeThemeColor}>
           {darkMode === "dark" ? <RiMoonLine size={30} /> : <RiSunLine size={30} />}
         </button>
       </div>
-      <div className='flex items-center gap-5 justify-end pr-8 '>
+      <div className='flex items-center gap-5 justify-end pr-8 md:pr-20'>
         <button className='text-black dark:text-white lg:hidden' onClick={changeThemeColor}>
           {darkMode === "dark" ? <RiMoonLine size={30} /> : <RiSunLine size={30} />}
         </button>
