@@ -34,9 +34,9 @@ export default function RootLayout({
         <main className="flex flex-col min-h-screen pt-28 pb-44">
           {children}
         </main>
-        {/* <footer className="flex justify-center items-center h-20 bg-gray-200 dark:bg-neutral-800 text-black dark:text-white">
-          <p className="text-sm">© 2025 Sebastián Londoño Valencia</p>
-        </footer> */}
+        <footer className="fixed bottom-0 left-0 right-0 h-20 bg-gray-200 dark:bg-neutral-800 text-black dark:text-white text-center flex items-center justify-center">
+          <p className="text-sm text-black dark:text-white">© 2025 Sebastián Londoño Valencia</p>
+        </footer>
       </body>
     </html>
   );
