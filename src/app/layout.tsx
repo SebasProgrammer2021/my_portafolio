@@ -31,11 +31,11 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} bg-white dark:bg-neutral-900 container`}>
         <Header />
-        <main className="flex flex-col min-h-screen pt-28 pb-44">
+        <main className="flex flex-col min-h-screen pt-28">
           {children}
         </main>
-        <footer className="fixed bottom-0 left-0 right-0 h-20 bg-gray-200 dark:bg-neutral-800 text-black dark:text-white text-center flex items-center justify-center">
-          <p className="text-sm text-black dark:text-white">© 2025 Sebastián Londoño Valencia</p>
+        <footer className=" h-20 bg-gray-200 dark:bg-neutral-800 text-black dark:text-white text-center flex items-center justify-center shadow-md">
+          <p className="text-sm">© 2025 Sebastián Londoño Valencia. All rights reserved.</p>
         </footer>
       </body>
     </html>

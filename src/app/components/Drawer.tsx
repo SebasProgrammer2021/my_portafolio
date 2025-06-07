@@ -1,8 +1,10 @@
+'use client';
+
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } from '@headlessui/react'
 import { IoCloseOutline } from "react-icons/io5";
-import Navbar from './Navbar';
 import { navigation } from '../constants/navbar';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface Props {
   open: boolean;
@@ -10,6 +12,7 @@ interface Props {
 }
 
 export default function Drawer({ open, setOpen }: Props) {
+  const pathname = usePathname();
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
@@ -41,11 +44,17 @@ export default function Drawer({ open, setOpen }: Props) {
                 </div>
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
                   <ul className="navbarList flex flex-col gap-5 lg:gap-0 text-black items-center text-xl lg:flex-row lg:w-full lg:justify-center">
-                    {navigation.map((item) => (
-                      <li key={item.name} id="itemEnlace" className="navbarListItem flex items-center lg:hover:bg-gray-400 hover:rounded-3xl text-black dark:text-white">
-                        <Link href={item.href} className="navbarListItemLink lg:p-3 " onClick={() => setOpen && setOpen(false)}>{item.name}</Link>
+                    {pathname.includes("contact") ? (
+                      <li key={"Home"} id="Home" className="navbarListItem flex items-center hover:bg-gray-300 dark:hover:text-black hover:rounded-3xl text-black dark:text-white font-semibold">
+                        <Link href={"/"} className="navbarListItemLink lg:p-3 " onClick={() => setOpen && setOpen(false)}>Home</Link>
                       </li>
-                    ))}
+                    ) : (
+                      navigation.map((item) => (
+                        <li key={item.name} id="itemEnlace" className="navbarListItem flex items-center lg:hover:bg-gray-400 hover:rounded-3xl text-black dark:text-white">
+                          <Link href={item.href} className="navbarListItemLink lg:p-3 " onClick={() => setOpen && setOpen(false)}>{item.name}</Link>
+                        </li>
+                      ))
+                    )}
                   </ul>
                 </div>
               </div>

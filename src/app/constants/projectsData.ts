@@ -7,7 +7,7 @@ export const projectData = [
     id: 1,
     image: "/ptll_ppal_app_mhwebp.webp",
     title: "App Mario Hernandez",
-    description: "Esta es una aplicación híbrida que utiliza una base desarrollada con React Native. Embebe un sitio completo construido en VTEX, junto con componentes personalizados en React.js, facilitando la compra de una variedad de productos de la marca.",
+    description: "This is a hybrid application that uses a base developed with React Native. It embeds a complete site built on VTEX, along with custom components in React.js, facilitating the purchase of a variety of brand products.",
     type: "Ecommerce",
     websiteLink: "https://play.google.com/store/apps/details?id=com.shopmh",
     technologies: [
@@ -23,7 +23,7 @@ export const projectData = [
     id: 2,
     image: "/ptll_empresarios_haceb.webp",
     title: "Empresarios Haceb",
-    description: "Plataforma ecommerce para la venta de productos de la marca Haceb por medio de referidos. El cual es desarrollado completamente en VTEX, ademas posee un panel de administración para la gestión del empresario.",
+    description: "Ecommerce platform for selling Haceb brand products through referrals. It is fully developed on VTEX and also has an administration panel for managing the business owner.",
     type: "Ecommerce",
     websiteLink: "https://empresarios.haceb.com/",
     technologies: [
@@ -39,8 +39,8 @@ export const projectData = [
     id: 3,
     image: "/ptll_tita_test.webp",
     title: "Tita Media Test",
-    description: "Aplicación web que permite iniciar sesión con Google, permite visualizar un feed de publicaciones con detalles como likes y comentarios. Incluye modal de información de usuario, filtrado por etiquetas y muestra la información del usuario autenticado en el encabezado.",
-    type: "Prueba tecnica",
+    description: "Web application that allows login with Google, viewing a feed of posts with details like likes and comments. It includes a user information modal, tag filtering, and displays the authenticated user's information in the header.",
+    type: "Technical Test",
     websiteLink: "https://sebasprogrammer2021.github.io/Tita-Media-prueba-t-cnica/",
     technologies: [
       { name: "React", icon: IoLogoReact, color: "#61DAFB" },
@@ -54,8 +54,8 @@ export const projectData = [
     id: 4,
     image: "/ptll_movie_searcher.webp",
     title: "Movie Searcher",
-    description: "Buscador de películas por nombre, que permite obtener la imagen, nombre y año de lanzamiento de la película en la vista de resultados. En la vista detallada de la película, muestra el nombre de la película, su portada, los actores principales y una descripción.",
-    type: "Proyecto de curso",
+    description: "Movie searcher by name, allowing you to get the image, name, and release year of the movie in the results view. In the detailed view, it shows the movie's name, cover, main actors, and a description.",
+    type: "Course Project",
     websiteLink: "https://movie-searcher-udemy.surge.sh/",
     technologies: [
       { name: "JavaScript", icon: IoLogoJavascript, color: "rgb(247 223 30)" },
@@ -68,8 +68,8 @@ export const projectData = [
     id: 5,
     image: "/ptll_credicalidda.webp",
     title: "Credicalidda",
-    description: "Página de contenido informativo sobre servicios ofrecidos por Credicalidda, como preguntas frecuentes, información de contacto, terminos y condiciones y políticas de privacidad.",	
-    type: "Web Informativa",
+    description: "Informational content page about services offered by Credicalidda, such as FAQs, contact information, terms and conditions, and privacy policies.",	
+    type: "Informative Website",
     websiteLink: "https://www.credicalidda.com.pe/paginas-informativas#selected=Preguntas-frecuentes",
     technologies: [
       { name: "JavaScript", icon: IoLogoJavascript, color: "rgb(247 223 30)" },

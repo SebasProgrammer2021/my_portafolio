@@ -41,7 +41,7 @@ export const Header = () => {
         <div className='hidden lg:flex lg:w-fit lg:justify-self-center'>
           <Navbar />
         </div>
-        <button className='text-black dark:text-white' onClick={changeThemeColor}>
+        <button className='text-black dark:text-white cursor-pointer' onClick={changeThemeColor}>
           {darkMode === "dark" ? <RiMoonLine size={30} /> : <RiSunLine size={30} />}
         </button>
         <button className='flex lg:hidden text-black dark:text-white' onClick={() => setOpen(!open)}>

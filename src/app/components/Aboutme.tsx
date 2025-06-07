@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const Aboutme = () => {
   return (
-    <section className="aboutMe pt-16 md:pt-10 lg:pb-20 md:text-center" id="aboutMe">
+    <section className="aboutMe pt-20 md:pt-36 lg:pb-20 text-center" id="aboutMe">
       <h2 className="aboutMeTitle mb-3 text-2xl lg:text-4xl font-semibold dark:text-white">About me</h2>
       <div className="aboutMeContenteContainer">
         <div className="aboutMeProfileDescription text-lg">
