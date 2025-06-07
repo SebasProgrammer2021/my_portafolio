@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react'
 import mePicture from '../../../public/me.webp';
 import Image from "next/image";
 import { useTypingTextAnimation } from '../hooks/useTypingTextAnimation';
+import Link from 'next/link';
 
 export const Welcome = () => {
   const wordRef = useRef<HTMLDivElement>(null);
@@ -26,13 +27,13 @@ export const Welcome = () => {
   return (
     <section className="welcome flex flex-col lg:flex-row items-center lg:justify-center h-full pt-3 lg:pt-32 pb-32 lg:w-full lg:gap-10">
       <div className='flex flex-col lg:gap-8 lg:justify-between lg:w-3/6 lg:flex-col-reverse'>
-        <a href='https://www.linkedin.com/in/sebasti%C3%A1n-londo%C3%B1o-valencia/' target='_blank' className='hidden lg:flex mt-20 border border-black dark:border-white p-5 rounded-2xl
+        <Link href='https://www.linkedin.com/in/sebasti%C3%A1n-londo%C3%B1o-valencia/' target='_blank' className='hidden lg:flex mt-20 border border-black dark:border-white p-5 rounded-2xl
          w-fit text-black text-xl dark:text-white'
         >
           <span className='dark:text-white'>
             Contacta conmigo
           </span>
-        </a>
+        </Link>
         <div className='messageContainer flex gap-5 mt-28 h-10 lg:mt-5'>
           <div className={`text-2xl lg:text-4xl font-semibold uppercase text-center lg:text-left md:w-full dark:text-white`} ref={wordRef}></div>
         </div>
