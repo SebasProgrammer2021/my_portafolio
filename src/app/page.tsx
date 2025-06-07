@@ -5,7 +5,7 @@ import { Welcome } from "./components/Welcome"
 
 export default function App() {
   return (
-    <div className="lg:pt-20">
+    <div className="">
       <Welcome />
       <Aboutme />
       <Skills />
