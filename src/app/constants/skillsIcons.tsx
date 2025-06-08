@@ -45,7 +45,7 @@ export const skillsData = [
   },
   {
     id: 7,
-    icon: <SiVtex size={50} color='#FFC107' />,
+    icon: <SiVtex size={50} color='#e31c58' />,
     name: 'Vtex'
   },
   {
@@ -65,7 +65,7 @@ export const skillsData = [
   },
   {
     id: 11,
-    icon: <SiGithub size={50} color='#181717' />,
+    icon: <SiGithub size={50} className="text-black dark:text-white" />,
     name: 'Github'
   },
   {

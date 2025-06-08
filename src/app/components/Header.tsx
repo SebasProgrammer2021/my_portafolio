@@ -1,27 +1,18 @@
 'use client'
+
 import React, { useEffect, useState } from 'react';
 import Drawer from './Drawer';
 import Navbar from './Navbar';
 import { CiMenuKebab } from "react-icons/ci";
 import { RiMoonLine, RiSunLine } from "react-icons/ri";
-
-const useIsClient = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  return isClient;
-};
-
+import Link from 'next/link';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState<"dark" | "light">("light"); // Default value
+  const [darkMode, setDarkMode] = useState<"dark" | "light">("light");
 
   useEffect(() => {
-    if (typeof window !== 'undefined') { // Crucial check for browser environment
+    if (typeof window !== 'undefined') {
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       setDarkMode(prefersDark ? "dark" : "light");
     }
@@ -42,15 +33,15 @@ export const Header = () => {
 
   return (
     <header className='flex justify-between lg:justify-around items-center pt-10 fixed top-0 z-[1] w-full' id='Header'>
-      <a className="text-black text-3xl font-semibold dark:text-white lg:w-fit lg:text-nowrap"
-        style={{ color: darkMode === "dark" ? "white" : "black" }} href='#home'>
+      <Link className="text-black text-3xl font-semibold dark:text-white lg:w-fit lg:text-nowrap"
+        style={{ color: darkMode === "dark" ? "white" : "black" }} href='/'>
         My portfolio
-      </a>
+      </Link>
       <div className='flex items-center gap-5 justify-self-end lg:justify-evenly lg:w-full pr-8 md:pr-20'>
         <div className='hidden lg:flex lg:w-fit lg:justify-self-center'>
           <Navbar />
         </div>
-        <button className='text-black dark:text-white' onClick={changeThemeColor}>
+        <button className='text-black dark:text-white cursor-pointer' onClick={changeThemeColor}>
           {darkMode === "dark" ? <RiMoonLine size={30} /> : <RiSunLine size={30} />}
         </button>
         <button className='flex lg:hidden text-black dark:text-white' onClick={() => setOpen(!open)}>
